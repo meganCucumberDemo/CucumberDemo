@@ -7,9 +7,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-	features = "src/test/java/features",
-	glue = "stepDefinitions",
-	dryRun = false
+	features = "src/test/features",
+	glue = "src/test/java/stepDefinitions",
+	dryRun = true, 
+	strict = false
+	
+	
 		
 	)
 
